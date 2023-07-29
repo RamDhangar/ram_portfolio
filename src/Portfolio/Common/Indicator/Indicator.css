@@ -1,0 +1,19 @@
+.page-indicator {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.indicator-line {
+    width: 20%;
+    height: 2px;
+    background: blue;
+}
+.indicator-line-pointer {
+    width: 5%;
+    height: 8px;
+    background: red;
+    border-radius: 2px;
+    position: absolute;
+    top: -3px;
+}

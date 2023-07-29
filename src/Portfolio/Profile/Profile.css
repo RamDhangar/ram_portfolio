@@ -1,0 +1,121 @@
+.profile-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    background-color: var(--widget-color);
+    /* background-image: url('../../assets/bg.jpg'); */
+    /* clip-path: polygon(0 0, 100 0, 100 100, 70 100, 0 100); */
+}
+
+.profile-parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+
+.profille-details-name {
+    font-size: 24px;
+    font-family: 'Popins SemiBold';
+}
+
+.profile-details {
+    width: 40%;
+}
+
+.profile-details-role {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+
+.profile-details-role h1{
+    font-size: 40px;
+    font-family: cursive !important;
+}
+.primary-text {
+    color: (--white);
+
+}
+
+.highligh-text {
+    color: var(--dark-orange);
+}
+
+.profile-bio {
+    font-size: 12px;
+    margin: 5px 0 0 0 ;
+    font-family: "Poppins Light";
+}  
+
+.profile-picture {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-Picture-background {
+    padding-top: 20px;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    box-shadow: 0 2px 0 0 var(--white);
+    margin: 20px 0;
+}
+
+.profile-Picture-background img {
+    width: 97%;
+    height: 97%;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.profile-Picture-background img:hover {
+    transform: scale(1.1);
+    transition: 2s ease-in-out;
+}
+
+.social-media-icons {
+    margin-top: 10px;
+}
+.social-media-icons a {
+    text-decoration: none;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1110px) {
+    .profile-picture {
+        margin: 0 20px;
+    }
+    .profille-details-name {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .profile-Picture-background {
+        width: 320px;
+        height: 320pxs;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .profile-picture {
+        margin: 0;
+        width: 100%;
+    }
+    .profile-Picture-background {
+        width: 380px;
+    }
+    .profile-parent {
+        flex-direction: column-reverse;
+    }
+    .profile-details {
+        width: 100%;
+    }
+}

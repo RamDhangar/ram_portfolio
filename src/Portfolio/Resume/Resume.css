@@ -1,0 +1,166 @@
+.resume-container {
+    width: 100%;
+    min-height: 400px;
+    margin-top: 7%;
+    /* margin: 5%; */
+}
+
+.resume-indicator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resume-indicator h2 {
+    align-self: center;
+    margin: 0;
+}
+
+.resume {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.slider {
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.slider-labels::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-labels {
+    width: 100%;
+    margin: 0;
+    padding-top: 2px;
+    display: flex;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    overflow: auto;
+}
+.slide-title {
+    width: 100px;
+    min-width: 100px;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor:pointer;
+    text-wrap: nowrap;
+    /* border-bottom-left-radius: -3px;
+    border-bottom-right-radius: -3px; */
+}
+
+.slider-content {
+    border: 1px solid whitesmoke;
+    border-top: none;
+    min-height: 350px;
+    color: wheat;
+    padding: 8% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.content-box {
+    margin: 12px 0;
+}
+
+.first-line {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding-left: 14px;
+    position: relative;
+}
+
+.first-line > div{
+    display: flex;
+    align-items: center;
+    
+}
+
+.first-line > div.content-left  {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content-box h2 {
+    margin: 0;
+}
+
+.content-box h4 {
+    margin: 0;
+    margin-left: 22px;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.content-box p {
+    margin: 0;
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: 200;
+    opacity: 0.6;
+    margin-top: 4px;
+}
+
+.content-box span.indicator {
+    background: red;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    position: absolute;
+    top: 11px;
+    left: -4px;
+}
+
+.subheading-links {
+    margin-left: 22px;
+}
+
+.subheading-links a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1110px) {
+    .profile-picture {
+        margin: 0 20px;
+    }
+    .profille-details-name {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .slider-content {
+        padding: 5% 2%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .content-box h2 {
+        font-size: 16px;
+    }
+    .first-line > div.content-left {
+        font-size: 14px;
+    }
+    .content-box h4 {
+        font-size: 14px;
+    }
+    .content-box p {
+        font-size: 12px;
+    }
+    .content-box span.indicator {
+        top: 7px;
+    }
+}

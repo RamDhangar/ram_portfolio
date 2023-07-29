@@ -1,0 +1,29 @@
+
+.btn {
+    cursor: pointer;
+    margin: 15px;
+}
+.primary-btn {
+    color: var(--white);
+    border: 2px solid linen;
+    font-size: 12px;
+    background-color: #1f2235;
+    width: 80px;
+    height: 28px;
+  }
+  
+.primary-btn:hover {
+    color: aliceblue;
+    border: 2px solid #ff5823;
+    background-color: #1f2235;
+    cursor: pointer;
+  }
+  
+.secondary-btn {
+    color: var(--white);
+    font-size: 12px;
+    background-color: #ff5823;
+    width: 80px;
+    height: 28px;
+    cursor: pointer;
+  }

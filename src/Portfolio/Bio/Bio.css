@@ -1,0 +1,54 @@
+.boi-container {
+    margin-top: 50px;
+}
+
+.bio-parent {
+    background-color: var(--widget-color);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.bio-picture {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-content {
+    width: 60%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.basic-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.basic-detail div {
+    flex: 1;
+}
+
+.basic-detail h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.basic-detail span {
+    font-size: 12px;
+}
+.bio-headline {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 25px;
+    padding-left: 0;
+    /* border: 1px solid white; */
+}
+.indicator {
+    color: white;
+}
