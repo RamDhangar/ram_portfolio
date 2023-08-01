@@ -155,7 +155,7 @@ function Resume(props) {
         <h2>Resume</h2>
         <Indicator />
       </div>
-      <div className="resume">
+      <div className="resume" data-aos="zoom-in" data-aos-duration="1000">
         <div className="slider">
           <div
             style={{

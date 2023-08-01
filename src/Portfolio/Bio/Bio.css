@@ -3,9 +3,10 @@
 }
 
 .bio-parent {
-    background-color: var(--widget-color);
+    /* background-color: var(--widget-color); */
+    color: wheat;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px;
 }
 
@@ -14,10 +15,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+.bio-image {
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
 }
 
 .bio-content {
-    width: 60%;
+    width: 45%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -51,4 +59,49 @@
 }
 .indicator {
     color: white;
+}
+
+@media screen and (max-width: 910px) {
+    .bio-content {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .bio-parent {
+        position: relative;
+    }
+    .bio-image {
+        width: 850px;
+        height: 650px;
+    }
+    .bio-picture {
+        width: 100%;
+        opacity: 0.25;
+    }
+    .bio-content {
+        position: absolute;
+        width: 500px;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%) !important;
+
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .bio-content {
+        width: 400px;
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bio-content {
+        width: 300px;
+        top: -20px;
+    }
+    .bio-image {
+        height: 750px;
+    }
 }

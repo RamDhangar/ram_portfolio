@@ -101,7 +101,7 @@ function Profile(props) {
           data-aos-delay="500"
         >
           <div className="profile-Picture-background">
-            <img src="profilephoto.jpg" alt="" />
+            <img src="profile.jpg" alt="" />
           </div>
         </div>
       </div>
