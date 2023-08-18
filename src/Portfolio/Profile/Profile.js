@@ -1,12 +1,8 @@
 import React from "react";
 import "./Profile.css";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import Facebook from "@mui/icons-material/Facebook";
-import GitHub from "@mui/icons-material/GitHub";
-import LinkedIn from "@mui/icons-material/LinkedIn";
-import Twitter from "@mui/icons-material/Twitter";
 import Typical from "react-typical";
 import AppButton from "../Common/AppButton/AppButton";
+import SocialLink from "../Common/SocialLink/ScialLinks"
 
 function Profile(props) {
   function onclick() {
@@ -73,7 +69,7 @@ function Profile(props) {
               clickEvent={downloadPDF}
             />
           </div>
-          <div className="social-media">
+          {/* <div className="social-media">
             <div className="social-media-icons">
               <a href="https://www.instagram.com">
                 {" "}
@@ -92,7 +88,8 @@ function Profile(props) {
                 <Twitter />
               </a>
             </div>
-          </div>
+          </div> */}
+          <SocialLink/>
         </div>
         <div
           className="profile-picture"

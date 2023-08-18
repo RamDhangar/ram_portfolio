@@ -1,6 +1,7 @@
 :root{
   --light-blue : #04C3FF;
-  --widget-color: #465059;
+  /* --widget-color: #465059; */
+  --widget-color: wheat;
   --light-blue-shadow:  rgb(69 211 255 / 27%);
   --sea-green: #0ABEAD;
   --sea-green-dark: #0CBFAE;
@@ -22,8 +23,10 @@
 
 .App {
   background-color: #23263B;
-  width: 92%;
-  padding: 10px 4%;
+  width: calc(100% - 20px)  ;
+  min-height: 100vh;
+  /* padding: 10px 4%; */
+  border: 10px solid var(--widget-color);
 }
 
 .MuiButtonBase-root {

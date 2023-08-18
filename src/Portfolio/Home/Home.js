@@ -3,6 +3,7 @@ import Profile from '../Profile/Profile';
 import Bio from '../Bio/Bio';
 import Resume from '../Resume/Resume';
 import Contect from '../ContectMe/Contect';
+import Footer from '../Footer/Footer';
 
 function Home(props) {
     return (
@@ -11,6 +12,7 @@ function Home(props) {
          <Bio/>
          <Resume/>
          <Contect/>
+         <Footer/>
         </>
     );
 }

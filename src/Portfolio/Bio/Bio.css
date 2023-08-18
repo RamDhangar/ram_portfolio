@@ -61,6 +61,15 @@
     color: white;
 }
 
+.single-page {
+    margin-top: 60px !important;
+}
+
+.single-page .bio-picture img {
+    width: 450px !important;
+    height: 750px !important;
+}
+
 @media screen and (max-width: 910px) {
     .bio-content {
         width: 50%;
@@ -68,6 +77,9 @@
 }
 
 @media screen and (max-width: 910px) {
+    .single-page .bio-picture img {
+        width: 550px !important;
+    }
     .bio-parent {
         position: relative;
     }
@@ -90,6 +102,9 @@
 }
 
 @media screen and (max-width: 610px) {
+    .single-page .bio-picture img {
+        width: 450px !important;
+    }
     .bio-content {
         width: 400px;
         top: 30px;

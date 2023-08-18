@@ -7,7 +7,8 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 function Contect(props) {
     return (
         <div className='contect-container'>
-            <Indicator lable="Contect Me" />
+            {!props.isHeaderRoute &&
+            <Indicator lable="Contect Me" />}
             <div className='contect-body'>
 
                     <svg className="contect-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none" data-aos="zoom-in" data-aos-duration="1000">

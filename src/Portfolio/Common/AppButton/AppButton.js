@@ -3,14 +3,14 @@ import "./AppButton.css"
 
 function AppButton(props) {
   return (
-    <span className="btn">
+    <div className="btn">
       <button 
       onClick={props.clickEvent}
-      className={props.isPrimary ? "primary-btn" : "secondary-btn"}
+      className={props.isPrimary ? "primary-btn btn" : "secondary-btn btn"}
       >
         {props.label}
       </button>
-    </span>
+    </div>
   );
 }
 

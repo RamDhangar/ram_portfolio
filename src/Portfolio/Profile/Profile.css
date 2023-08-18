@@ -10,6 +10,10 @@
     /* clip-path: polygon(0 0, 100 0, 100 100, 70 100, 0 100); */
 }
 
+.profile-buttons {
+    display: flex;
+}
+
 .profile-parent {
     display: flex;
     justify-content: space-around;

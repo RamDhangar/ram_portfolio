@@ -4,8 +4,8 @@ import Indicator from "../Common/Indicator/Indicator";
 
 function Bio(props) {
   return (
-    <div className="boi-container">
-      <Indicator lable='Bio'/>
+    <div className={"boi-container " + (props.isHeaderRoute ? "single-page" : '')} style={{marginTop: !props.isHeaderRoute ? '50px' : 0}}>
+      {!props.isHeaderRoute && <Indicator lable='Bio'/>}
       <div className="bio-parent">
         <div className="bio-picture" data-aos="fade-right" data-aos-duration="1000">
           <img

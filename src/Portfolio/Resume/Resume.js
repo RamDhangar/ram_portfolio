@@ -152,8 +152,12 @@ function Resume(props) {
   return (
     <div className="resume-container">
       <div className="resume-indicator">
+        {!props.isHeaderRoute &&
+        <>
         <h2>Resume</h2>
         <Indicator />
+        </>
+}
       </div>
       <div className="resume" data-aos="zoom-in" data-aos-duration="1000">
         <div className="slider">
