@@ -1,5 +1,6 @@
 import React from "react";
 import "./Bio.css";
+import Map from '../Map/Map';
 import Indicator from "../Common/Indicator/Indicator";
 
 function Bio(props) {
@@ -12,7 +13,11 @@ function Bio(props) {
             src={require("../../assets/me2.jpg")}
             alt=""
             className="bio-image"
+            style={{height: props.isHeaderRoute && '580px'}}
           />
+          {/* <div id="map">
+            <Map/>
+          </div> */}
         </div>
         <div className="bio-content" data-aos="fade-left" data-aos-duration="1000">
           {/* <div className="basic-detail">

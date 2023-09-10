@@ -8,24 +8,33 @@ import Twitter from "@mui/icons-material/Twitter";
 
 function ScialLinks(props) {
     return (
-        <div className="social-media">
+        <div className="social-media display-flex">
             <div className="social-media-icons">
+              <div className='link'>
               <a href="https://www.instagram.com">
-                {" "}
-                <InstagramIcon />{" "}
+                <InstagramIcon />
               </a>
+              </div>
+              <div className='link'>
               <a href="https://www.linkedin.com/in/ramdhangar">
                 <LinkedIn />
               </a>
+              </div>
+              <div className='link'>
               <a href="https://github.com/RamDhangar/">
                 <GitHub />
               </a>
+              </div>
+              <div className='link'>
               <a href="https://www.facebook.com/ram.chodhari.14">
                 <Facebook />
               </a>
+              </div>
+              <div className='link'>
               <a href="#">
                 <Twitter />
               </a>
+              </div>
             </div>
           </div>
     );

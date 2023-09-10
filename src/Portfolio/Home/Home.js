@@ -4,6 +4,7 @@ import Bio from '../Bio/Bio';
 import Resume from '../Resume/Resume';
 import Contect from '../ContectMe/Contect';
 import Footer from '../Footer/Footer';
+import Map from '../Map/Map';
 
 function Home(props) {
     return (
@@ -12,6 +13,7 @@ function Home(props) {
          <Bio/>
          <Resume/>
          <Contect/>
+         <Map/>
          <Footer/>
         </>
     );

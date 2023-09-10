@@ -61,11 +61,10 @@ function Profile(props) {
               Full stack Developer || Angular || React/Redux || Node.js || Cumulus System pvt ltd
             </span>
           </div>
-          <div className="profile-buttons">
-            <AppButton isPrimary="true" label="Hire me" clickEvent={onclick} />
+          <div className="profile-buttons display-flex">
             <AppButton
               type="secondary"
-              label="Resume"
+              label="Get Resume"
               clickEvent={downloadPDF}
             />
           </div>
@@ -98,7 +97,7 @@ function Profile(props) {
           data-aos-delay="500"
         >
           <div className="profile-Picture-background">
-            <img src="profile.jpg" alt="" />
+            <img src={require("../../assets/me.jpg")} alt="" />
           </div>
         </div>
       </div>

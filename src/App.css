@@ -1,7 +1,8 @@
 :root{
-  --light-blue : #04C3FF;
-  /* --widget-color: #465059; */
-  --widget-color: wheat;
+  --background: #2b4159
+  /* --light-blue : #04C3F'F;
+  /* --widget-color: #465059;       
+  --widget-color: #3d3d3d;
   --light-blue-shadow:  rgb(69 211 255 / 27%);
   --sea-green: #0ABEAD;
   --sea-green-dark: #0CBFAE;
@@ -18,17 +19,22 @@
   --toast-error: #e44f4ffa;
   --toast-shadow:  #9c9c9ce3;
   --toast-success: #0CBFAE;
-  --loader-color: #0CBFAE
+  --loader-color: #0CBFAE' */
 }
 
 .App {
-  background-color: #23263B;
-  width: calc(100% - 20px)  ;
+  background-color: var(--background);
+  width: 100%;
+  overflow-y: hidden;
   min-height: 100vh;
-  /* padding: 10px 4%; */
-  border: 10px solid var(--widget-color);
 }
 
 .MuiButtonBase-root {
   width: 20px !important;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

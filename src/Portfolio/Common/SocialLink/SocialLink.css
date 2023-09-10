@@ -1,7 +1,29 @@
 .social-media-icons {
     margin-top: 10px;
+    display: flex;
+    gap: 10px;
 }
 .social-media-icons a {
     text-decoration: none;
-    margin: 5px;
+    margin-top: 6px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.link:hover {
+    border: 1px solid #0ef;
+    box-shadow: 0 0  20px #0ef;
+}
+
+.link a svg {
+    margin-right: 0 !important;
+    max-width: none !important;
+    fill: #0ef;
 }

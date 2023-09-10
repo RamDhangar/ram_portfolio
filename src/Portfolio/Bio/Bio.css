@@ -2,6 +2,12 @@
     margin-top: 50px;
 }
 
+#map {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
 .bio-parent {
     /* background-color: var(--widget-color); */
     color: wheat;

@@ -44,7 +44,10 @@
     color: (--white);
 
 }
-
+.highlight-text {
+    color: #0ef;
+    font-weight: bold;
+}
 .highligh-text {
     color: var(--dark-orange);
 }
@@ -77,6 +80,9 @@
     background-size: cover;
     border-radius: 50%;
     background-repeat: no-repeat;
+    box-shadow: 0 0 5px cyan,
+    0 0 10px cyan, 0 0 20px cyan,
+    0 0 50px cyan, 0 0 100px cyan ;
 }
 
 .profile-Picture-background img:hover {
@@ -89,7 +95,6 @@
 }
 .social-media-icons a {
     text-decoration: none;
-    margin: 5px;
 }
 
 @media screen and (max-width: 1110px) {

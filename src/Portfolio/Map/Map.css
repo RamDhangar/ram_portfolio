@@ -1,0 +1,22 @@
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.leaflet-popup {
+    bottom: -40px !important; /* adjust as you see fit */
+}
+
+.leaflet-popup-content {
+    margin: 5px
+}
+
+.map-view-container {
+    width: 90%;
+    margin: 5px auto;
+}
+
+.map-div {
+    margin-top: 25px;
+}

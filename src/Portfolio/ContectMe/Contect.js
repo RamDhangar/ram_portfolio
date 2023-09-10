@@ -1,10 +1,45 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import "./Contect.css";
 import Indicator from '../Common/Indicator/Indicator';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import emailjs from '@emailjs/browser';
 
 function Contect(props) {
+    const form = useRef();
+    const [formData, setFormData] = useState({
+        user_name: '',
+        user_email: '',
+        message: ''
+        // Add more fields as needed
+      });
+
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+          ...formData,
+          [name ]: value,
+        });
+      };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_ccr4rlc', 'template_vebdf85', form.current, 'hjvb3Q5BvE8uST0gB')
+          .then((result) => {
+              console.log(result.text);
+              console.log("messge success");
+          }, (error) => {
+              console.log(error.text);
+          });
+
+        setFormData({
+            user_name: '',
+            user_email: '',
+            message: ''
+        })
+      };
+
     return (
         <div className='contect-container'>
             {!props.isHeaderRoute &&
@@ -306,7 +341,7 @@ function Contect(props) {
                             </g>
                         </g>
                     </svg>
-                    <form className='contect-form' data-aos="zoom-out" data-aos-duration="1000">
+                    <form ref={form} onSubmit={sendEmail} className='contect-form' data-aos="zoom-out" data-aos-duration="1000">
                         <h1 className="form-title">Get in Touch</h1>
 
                         <div className="form-group">
@@ -314,22 +349,22 @@ function Contect(props) {
                                 {/* <i className="icon" data-feather="user"></i> */}
                                 <PersonOutlineIcon/>
                             </label>
-                            <input type="text" id="formName" className="form-control form-control-lg thick" placeholder="Name" />
+                            <input type="text" id="formName" value={formData.user_name} onChange={handleChange} className="form-control form-control-lg thick" placeholder="Name" name='user_name'/>
                         </div>
 
                         <div className="form-group position-relative">
                             <label for="formEmail" className="d-block">
                                 <MailOutlineIcon/>
                             </label>
-                            <input type="email" id="formEmail" className="form-control form-control-lg thick" placeholder="E-mail" />
+                            <input type="email" id="formEmail" value={formData.user_email} onChange={handleChange} className="form-control form-control-lg thick" placeholder="E-mail" name='user_email'/>
                         </div>
 
                         <div className="form-group message">
-                            <textarea id="formMessage" className="form-control form-control-lg" rows="7" placeholder="Message"></textarea>
+                            <textarea name='message' id="formMessage" value={formData.message} onChange={handleChange} className="form-control form-control-lg" rows="7" placeholder="Message"></textarea>
                         </div>
 
                         <div className="text-center">
-                            <button type="submit" className="btn btn-primary" tabIndex="1">SendMessage</button>
+                            <input type="submit" className="btn btn-primary" tabIndex="1" placeholder='Send'/>
                         </div>
                     </form>
             </div>

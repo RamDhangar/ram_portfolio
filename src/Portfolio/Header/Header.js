@@ -39,12 +39,12 @@ function Header(props) {
     return (
         <div className='header-container'>
             <div className='header-logo'>
-                <h2>Ram</h2>
+                    <img src={require("../../assets/logo.png")} alt="" />
             </div>
             <div className='header-content'>
                  {
                     headerLink.map((link) => {
-                        return <span onClick={() => setHeader(link)} style={{color: link.id === activeId ? 'blue' : 'black'}}>{link.label}</span>
+                        return <span onClick={() => setHeader(link)} style={{color: link.id === activeId ? '#0ef' : '#fff'}}>{link.label}</span>
                     })
                 }
             </div>
@@ -53,7 +53,7 @@ function Header(props) {
                 <img src="cross.png" alt="" style={{width: "25px", height: "25px", cursor: 'pointer', display: !display ? 'none' : 'block'}} onClick={() => manuToggel('cross')}/>
                 {
                     headerLink.map((link) => {
-                        return <span onClick={() => setHeader(link)} style={{color: link.id === activeId ? 'blue' : 'black'}}>{link.label}</span>
+                        return <span onClick={() => setHeader(link)} style={{color: link.id === activeId ? '#0ef' : '#fff'}}>{link.label}</span>
                     })
                 }
             </div>

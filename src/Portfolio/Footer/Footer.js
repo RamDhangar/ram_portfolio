@@ -9,9 +9,7 @@ function Footer(props) {
                     <SocialLinks/>
             </div>
             <div className='footer-right'>
-            <div className='footer-logo'>
-                <h2>Ram</h2>
-            </div>
+            <img src={require("../../assets/logo.png")} alt="" style={{width:"52px", borderRadius: "50%", marginRight: '20px'}}/>
             <div className='footer-copyright'>
             &#169; 2025
             </div>

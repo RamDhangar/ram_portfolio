@@ -1,17 +1,25 @@
 .footer-container {
+    border-top: 1px solid white;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
     background: var(--widget-color);
     padding: 0 10px;
+    z-index: 99;
+    
+}
+
+.footer-container .social-icon .social-media {
+ justify-content: flex-start;
 }
 
 .footer-right {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
