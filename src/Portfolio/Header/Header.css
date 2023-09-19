@@ -67,7 +67,7 @@
         justify-content: space-around;
         top: 10px;
         right: 10px;
-        background: beige;
+        background: var(--pink);
         width: 190px;
         overflow: hidden;
     }
