@@ -1,0 +1,68 @@
+.skills-page-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.skills-page-container .indicator {
+    margin-top: 60px;
+}
+
+.skills-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skills {
+    width: 48%;
+
+}
+
+.skills p {
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 320px;
+}
+
+
+.progress-contianer {
+    width: 140px;
+}
+
+.progress-contianer span {
+    text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    .skills-parent {
+        flex-direction: column;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+    .skills-container {
+        justify-content: space-between;
+    }
+
+    .profestional-skills p {
+        margin-top: 0;
+    }
+
+    .profestional-skills .skills-container{
+        justify-content: space-around;
+        min-height: 250px;
+    }
+
+   
+}

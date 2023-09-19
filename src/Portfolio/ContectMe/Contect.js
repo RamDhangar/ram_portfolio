@@ -4,6 +4,7 @@ import Indicator from '../Common/Indicator/Indicator';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import emailjs from '@emailjs/browser';
+import AppButton from '../Common/AppButton/AppButton';
 
 function Contect(props) {
     const form = useRef();
@@ -364,7 +365,11 @@ function Contect(props) {
                         </div>
 
                         <div className="text-center">
-                            <input type="submit" className="btn btn-primary" tabIndex="1" placeholder='Send'/>
+                            {/* <input type="submit" className="btn btn-primary" tabIndex="1" placeholder='Send'/> */}
+                            <AppButton
+              type="secondary"
+              label="Get Resume"
+            />
                         </div>
                     </form>
             </div>

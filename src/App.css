@@ -1,5 +1,12 @@
 :root{
-  --background: #2b4159
+  --color:white;
+  --background: #2b4159;
+  --hightlight-color: #0ef;
+  --red: #f64f59;
+  --pink: #c471ed;
+  --blue: #550de4;
+  --link-color: #8a8aec;
+  
   /* --light-blue : #04C3F'F;
   /* --widget-color: #465059;       
   --widget-color: #3d3d3d;

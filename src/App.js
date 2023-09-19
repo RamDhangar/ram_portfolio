@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from 'react'
 import Contect from './Portfolio/ContectMe/Contect';
+import Skills from './Portfolio/Skills/Skills';
 AOS.init();
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
     home: Home,
     bio: Bio,
     resume: Resume,
-    contect: Contect
+    contect: Contect,
+    skills: Skills
   }
   const [daynamicComponent, setDynamicComponent] = useState(<Home/>);
 

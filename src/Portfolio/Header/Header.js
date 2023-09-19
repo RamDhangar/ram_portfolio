@@ -15,6 +15,10 @@ function Header(props) {
             id: 'bio'
         },
         {
+            label: "Skills",
+            id: 'skills'
+        },
+        {
             label: 'Resume',
             id: 'resume'
         },

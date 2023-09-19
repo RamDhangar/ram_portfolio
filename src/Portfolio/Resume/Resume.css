@@ -34,7 +34,7 @@
 .slider-labels {
     width: 100%;
     margin: 0;
-    padding-top: 2px;
+    padding-top: 10px;
     display: flex;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -43,6 +43,10 @@
 .slide-title {
     width: 100px;
     min-width: 100px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0 10px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -86,7 +90,7 @@
 }
 
 .first-line > div.content-left  {
-    color: red;
+    color: var(--red);
     font-size: 16px;
     font-weight: bold;
 }
@@ -113,7 +117,7 @@
 }
 
 .content-box span.indicator {
-    background: red;
+    background: var(--red);
     display: block;
     width: 10px;
     height: 10px;
@@ -130,6 +134,11 @@
 
 .subheading-links a {
     text-decoration: none;
+    color: var(--link-color);
+}
+
+.subheading-links a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1110px) {

@@ -1,0 +1,39 @@
+.circular-progress-contianer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 33%;
+}
+
+.circular-progress-contianer span {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+}
+
+.circle-background {
+    fill: none;
+    stroke: #ddd;
+}
+
+.circle-progress {
+    fill: none;
+    /* stroke: red; */
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.circle-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.circular-progress-contianer svg {
+    height: 6rem;
+    margin-right: 0;
+}
+

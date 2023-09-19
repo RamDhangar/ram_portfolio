@@ -154,8 +154,7 @@ function Resume(props) {
       <div className="resume-indicator">
         {!props.isHeaderRoute &&
         <>
-        <h2>Resume</h2>
-        <Indicator />
+        <Indicator lable="Resume"/>
         </>
 }
       </div>
@@ -176,7 +175,8 @@ function Resume(props) {
                   className="slide-title"
                   onClick={() => showSlide(i)}
                   style={{
-                    background: i == activeSlide ? "#465059" : "whitesmoke",
+                    background: i === activeSlide ? "var(--background)" : "whitesmoke",
+                    color: i === activeSlide && "var(--pink)"
                   }}
                 >
                   {fieled.title}
@@ -208,7 +208,7 @@ function Resume(props) {
                     </div>
                     {content.subHeading && <h4>{content.subHeading}</h4>}
                     <div className="subheading-links">
-                    {content.subHeadingLinks && content.subHeadingLinks.map((data, i) => {return i===0 ? <span><a href="data.link">{data.label}</a></span> : <span> || <a href="data.link">{data.label}</a></span>})}
+                    {content.subHeadingLinks && content.subHeadingLinks.map((data, i) => {return i===0 ? <span><a href={data.link}>{data.label}</a></span> : <span> || <a href="data.link">{data.label}</a></span>})}
                     </div>
                     <p>{content.detail}</p>
                   </div>

@@ -6,6 +6,7 @@
 
 .indicator h2 {
     margin: 0;
+    color: var(--hightlight-color);
 }
 .page-indicator {
     margin: 10px;
@@ -17,12 +18,12 @@
 .indicator-line {
     width: 20%;
     height: 2px;
-    background: blue;
+    background: var(--blue);
 }
 .indicator-line-pointer {
     width: 5%;
     height: 8px;
-    background: red;
+    background: var(--red);
     border-radius: 2px;
     position: absolute;
     top: -3px;
